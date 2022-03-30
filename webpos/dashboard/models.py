@@ -29,7 +29,8 @@ class Order(models.Model):
     # item_price = 
 
     def __str__ (self):
-        return self.order_item
+        return "%s" % (self.order_item)
+    
 
 
     
