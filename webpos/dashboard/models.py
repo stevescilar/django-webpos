@@ -1,3 +1,4 @@
+from tkinter import CASCADE
 from django.db import models
 
 import uuid
@@ -20,5 +21,15 @@ class Item(models.Model):
     def __str__ (self):
         return self.item_name
     
+#add to order for delivery
+class Order(models.Model):
+    order_id = models.UUIDField(default=uuid.uuid4, unique=True , primary_key=True, editable=False)
+    order_item = models.ForeignKey(Item,on_delete=models.CASCADE)
+    # ordered_by = models.ForeignKey(Customer,on_delete=models.CASCADE)
+    # item_price = 
+
+    def __str__ (self):
+        return self.order_item
+
 
     
