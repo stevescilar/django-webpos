@@ -30,6 +30,8 @@ class Order(models.Model):
 
     def __str__ (self):
         return "%s" % (self.order_item)
+
+
     
 
 
