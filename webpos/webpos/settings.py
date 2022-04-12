@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'dashboard.apps.DashboardConfig',
     'category',
     'accounts',
+    'store',
 ]
 
 MIDDLEWARE = [
