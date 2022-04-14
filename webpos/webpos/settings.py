@@ -39,9 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dashboard.apps.DashboardConfig',
+
+    # custom apps 
     'category',
     'accounts',
     'store',
+    'carts',
 ]
 
 MIDDLEWARE = [
